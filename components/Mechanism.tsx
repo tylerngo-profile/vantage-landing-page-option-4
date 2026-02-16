@@ -14,6 +14,10 @@ const steps = [
     title: 'Publish, distribute, and grow the audience',
     body: 'We publish to each hub and send as a structured newsletter. Promote via social cross-posting, targeted ads, and retargeting to drive traffic, increase sign-ups, and convert attention into warm leads.',
   },
+  {
+    title: 'Enrich the hub as you scale',
+    body: 'When your experts are ready, we can expand beyond written insights with richer formats, including video, podcast content, and media coverage, to deepen credibility and accelerate growth.',
+  },
 ];
 
 const Mechanism: React.FC = () => {
@@ -24,7 +28,7 @@ const Mechanism: React.FC = () => {
           Live in weeks. Updated forever.
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, idx) => (
             <div key={step.title} className="border border-stone-200 p-6 bg-stone-50">
               <div className="text-brand-900 font-semibold mb-3">{idx + 1})</div>
