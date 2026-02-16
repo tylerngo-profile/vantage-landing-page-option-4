@@ -4,18 +4,27 @@ import Button from './ui/Button';
 
 const CTA: React.FC = () => {
   return (
-    <Section className="bg-stone-50 border-t border-stone-200">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-serif text-5xl md:text-6xl text-stone-900 mb-8 leading-tight">
-          Ready to build your <br/> <span className="italic text-brand-900">authority engine?</span>
+    <Section id="roi" className="bg-white border-t border-stone-200">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="font-sans text-3xl md:text-4xl font-semibold text-stone-900 leading-tight mb-6">
+          Built on a decade of thought leadership know-how.
         </h2>
-        <p className="text-xl text-stone-600 mb-10 max-w-2xl mx-auto font-light">
-          Stop letting your firm's expertise go to waste. Start capturing, refining, and distributing it today.
+
+        <p className="text-lg text-stone-700 leading-relaxed mb-8">
+          Vantage is built by Profile, the award-winning thought leadership and PR agency. We've seen what works: strong, consistent executive insight wins attention, trust, and revenue.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Button variant="primary" size="lg">Book a personal demo</Button>
-          <Button variant="secondary" size="lg">View example hub</Button>
-        </div>
+
+        <p className="text-lg text-stone-700 leading-relaxed mb-8">
+          But most companies struggle because content is scattered, infrequent, and hard to sustain. Vantage fixes that. A dedicated hub on your website, with a clear conversion journey, powered by a professional team that keeps content flowing.
+        </p>
+
+        <p className="text-lg text-stone-900 font-medium leading-relaxed mb-10">
+          The best of both worlds: owned channel + done-for-you execution.
+        </p>
+
+        <Button variant="primary" size="lg">
+          Book a demo and see how Vantage could look on your domain.
+        </Button>
       </div>
     </Section>
   );

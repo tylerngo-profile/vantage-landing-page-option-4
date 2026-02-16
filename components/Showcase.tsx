@@ -1,82 +1,44 @@
 import React from 'react';
 import Section from './ui/Section';
-import Button from './ui/Button';
+
+const blocks = [
+  {
+    title: 'Written insights',
+    body: 'Regular articles and newsletters that build authority and demand.',
+  },
+  {
+    title: 'Social media',
+    body: "Amplify each executive's content to reach the right audience consistently.",
+  },
+  {
+    title: 'Video',
+    body: 'Bring insights to life and deepen connection with prospects.',
+  },
+  {
+    title: 'Media coverage',
+    body: 'Add third-party credibility that accelerates trust and boosts conversion.',
+  },
+];
 
 const Showcase: React.FC = () => {
   return (
-    <Section fullWidth className="bg-stone-100 py-24 md:py-40">
+    <Section id="examples" fullWidth className="bg-white py-24 border-t border-stone-200">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
-            <div className="max-w-2xl">
-                <span className="text-brand-900 font-semibold tracking-widest uppercase text-xs mb-4 block">The Platform</span>
-                <h2 className="font-serif text-4xl md:text-5xl text-stone-900 leading-tight">
-                    Your firm's new <br/>front page.
-                </h2>
+        <h2 className="font-sans text-3xl md:text-4xl font-semibold text-stone-900 leading-tight mb-6 max-w-4xl">
+          Written content is just the start. Scale your executive presence when you're ready.
+        </h2>
+
+        <p className="text-lg text-stone-600 mb-12 max-w-3xl">
+          Vantage gives you a platform now, plus a team you can plug into later.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {blocks.map((block) => (
+            <div key={block.title} className="border border-stone-200 bg-stone-50 p-6">
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">{block.title}</h3>
+              <p className="text-stone-600 leading-relaxed">{block.body}</p>
             </div>
-            <div className="mb-2">
-                 <p className="text-stone-600 max-w-md text-sm md:text-base leading-relaxed">
-                    A dedicated, branded content hub that hosts your insights, captures leads, and integrates directly with your CRM.
-                 </p>
-            </div>
-        </div>
-
-        {/* Browser Mockup */}
-        <div className="relative w-full rounded-sm bg-white shadow-2xl border border-stone-200 overflow-hidden">
-            {/* Fake Browser Bar */}
-            <div className="bg-stone-50 border-b border-stone-200 p-4 flex items-center space-x-4">
-                <div className="flex space-x-2">
-                    <div className="w-3 h-3 rounded-full bg-stone-300"></div>
-                    <div className="w-3 h-3 rounded-full bg-stone-300"></div>
-                    <div className="w-3 h-3 rounded-full bg-stone-300"></div>
-                </div>
-                <div className="flex-1 bg-white border border-stone-200 h-8 rounded-sm flex items-center px-4 text-xs text-stone-400 font-mono">
-                    insights.yourfirm.com
-                </div>
-            </div>
-
-            {/* Mockup Content */}
-            <div className="aspect-[16/9] w-full bg-white p-8 md:p-16 flex flex-col items-center justify-center border-b-[1px] border-stone-100 relative">
-                 {/* Abstract UI representation */}
-                 <div className="w-full max-w-4xl text-center space-y-8">
-                     <div className="inline-block px-3 py-1 bg-brand-50 text-brand-900 text-xs font-bold tracking-wider uppercase">Strategy Report</div>
-                     <div className="font-serif text-4xl md:text-6xl text-stone-900">The 2024 State of Supply Chain Resilience</div>
-                     <div className="flex items-center justify-center space-x-4 text-sm text-stone-500">
-                        <div className="flex -space-x-2">
-                            <div className="w-8 h-8 rounded-full bg-stone-200 border-2 border-white"></div>
-                            <div className="w-8 h-8 rounded-full bg-stone-300 border-2 border-white"></div>
-                        </div>
-                        <span>By J. Smith & A. Doe • 8 min read</span>
-                     </div>
-                 </div>
-
-                 {/* Simulated Article Body */}
-                 <div className="w-full max-w-2xl mt-16 space-y-4 opacity-50 blur-[1px]">
-                     <div className="h-4 bg-stone-200 w-full"></div>
-                     <div className="h-4 bg-stone-200 w-full"></div>
-                     <div className="h-4 bg-stone-200 w-11/12"></div>
-                     <div className="h-4 bg-stone-200 w-full"></div>
-                     <div className="flex gap-4 mt-8">
-                        <div className="h-40 bg-stone-100 w-1/2"></div>
-                        <div className="space-y-4 w-1/2">
-                             <div className="h-4 bg-stone-200 w-full"></div>
-                             <div className="h-4 bg-stone-200 w-full"></div>
-                             <div className="h-4 bg-stone-200 w-full"></div>
-                        </div>
-                     </div>
-                 </div>
-
-                 {/* Callout Overlay */}
-                 <div className="absolute bottom-8 right-8 bg-white p-6 shadow-xl border border-stone-200 max-w-xs z-20">
-                    <h4 className="font-bold text-stone-900 mb-2">Lead Capture Built-in</h4>
-                    <p className="text-sm text-stone-600 mb-4">Readers can access premium assets by exchanging email details.</p>
-                    <div className="h-8 bg-brand-900 w-full"></div>
-                 </div>
-            </div>
-        </div>
-
-        <div className="mt-12 text-center">
-            <Button variant="outline" size="lg">Explore a live example hub</Button>
+          ))}
         </div>
       </div>
     </Section>
