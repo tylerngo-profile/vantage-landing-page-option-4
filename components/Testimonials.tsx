@@ -18,17 +18,19 @@ const items = [
 
 const Testimonials: React.FC = () => {
   return (
-    <Section className="bg-stone-50 border-t border-stone-200">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="font-sans text-3xl md:text-4xl font-semibold text-stone-900 leading-tight mb-10">
+    <Section className="bg-brand-900 text-white relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-10 font-medium text-center">
           Simple, brand-lite design engineered for B2B conversion.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((item) => (
-            <div key={item.title} className="border border-stone-200 bg-white p-6">
-              <h3 className="text-lg font-semibold text-stone-900 mb-3">{item.title}</h3>
-              <p className="text-stone-600 leading-relaxed">{item.body}</p>
+            <div key={item.title} className="bg-white/5 border border-white/10 p-6">
+              <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+              <p className="text-brand-100 leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
