@@ -28,7 +28,7 @@ const Showcase: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-3xl">
             <span className="text-brand-900 font-semibold tracking-widest uppercase text-xs mb-4 block">Content formats</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-stone-900 leading-tight">
+            <h2 className="font-serif text-3xl md:text-4xl text-stone-900 leading-tight">
               Written content is just the start. Scale your executive presence when you're ready.
             </h2>
           </div>
@@ -42,7 +42,7 @@ const Showcase: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blocks.map((block) => (
             <div key={block.title} className="bg-white border border-stone-200 p-6">
-              <h3 className="font-serif text-2xl text-stone-900 mb-3">{block.title}</h3>
+              <h3 className="font-serif text-xl text-stone-900 mb-3">{block.title}</h3>
               <p className="text-stone-600 leading-relaxed">{block.body}</p>
             </div>
           ))}

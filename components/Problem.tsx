@@ -26,7 +26,7 @@ const Problem: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-32">
-            <h2 className="font-serif text-4xl md:text-5xl text-stone-900 mb-6 leading-tight">
+            <h2 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6 leading-tight">
               Consistent executive content, without chasing busy people.
             </h2>
             <div className="w-16 h-1 bg-brand-900 mb-6"></div>
@@ -45,7 +45,7 @@ const Problem: React.FC = () => {
                 </span>
                 {item.title}
               </h3>
-              <p className="text-xl text-stone-600 leading-relaxed font-serif pl-11">{item.body}</p>
+              <p className="text-lg text-stone-600 leading-relaxed font-serif pl-11">{item.body}</p>
             </div>
           ))}
         </div>

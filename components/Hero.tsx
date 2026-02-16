@@ -8,12 +8,12 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           <div className="lg:col-span-7 flex flex-col justify-center relative z-10">
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] text-stone-900 mb-8 tracking-tight">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-medium leading-[1.12] text-stone-900 mb-8 tracking-tight">
               The insight hub for your <br />
               <span className="italic text-brand-900">in-house experts.</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-stone-600 font-light leading-relaxed max-w-2xl mb-8">
+            <p className="text-lg md:text-xl text-stone-600 font-light leading-relaxed max-w-2xl mb-8">
               Vantage houses insight-led content for your internal experts, with done-for-you creation, newsletter sign-up, and analytics built in.
             </p>
 

@@ -33,7 +33,7 @@ const Mechanism: React.FC = () => {
   return (
     <Section id="how-it-works" className="bg-white">
       <div className="text-center max-w-3xl mx-auto mb-20">
-        <h2 className="font-serif text-4xl md:text-5xl text-stone-900 mb-6">Live in weeks. Updated forever.</h2>
+        <h2 className="font-serif text-3xl md:text-4xl text-stone-900 mb-6">Live in weeks. Updated forever.</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-b border-stone-200">
@@ -49,7 +49,7 @@ const Mechanism: React.FC = () => {
                 <Icon className="w-8 h-8 text-brand-900 stroke-[1.5]" />
                 <span className="font-serif text-4xl text-stone-200 group-hover:text-stone-300 transition-colors">{step.numeral}</span>
               </div>
-              <h3 className="text-xl font-serif text-stone-900 mb-4">{step.title}</h3>
+              <h3 className="text-lg font-serif text-stone-900 mb-4">{step.title}</h3>
               <p className="text-stone-600 leading-relaxed">{step.body}</p>
             </div>
           );
