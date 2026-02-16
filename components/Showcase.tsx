@@ -4,7 +4,7 @@ import Button from './ui/Button';
 
 const Showcase: React.FC = () => {
   return (
-    <Section fullWidth className="bg-stone-100 py-24 md:py-40">
+    <Section id="about" fullWidth className="bg-stone-100 py-24 md:py-40">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">

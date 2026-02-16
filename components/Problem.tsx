@@ -22,7 +22,7 @@ const items = [
 
 const Problem: React.FC = () => {
   return (
-    <Section className="bg-stone-50 border-b border-stone-200">
+    <Section id="features" className="bg-stone-50 border-b border-stone-200">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-32">

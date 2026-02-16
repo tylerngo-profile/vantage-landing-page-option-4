@@ -33,14 +33,14 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
+          <a href="#features" className="text-sm font-medium text-stone-600 hover:text-brand-900 transition-colors">
+            Features
+          </a>
           <a href="#how-it-works" className="text-sm font-medium text-stone-600 hover:text-brand-900 transition-colors">
-            Mechanism
+            How it works
           </a>
-          <a href="#examples" className="text-sm font-medium text-stone-600 hover:text-brand-900 transition-colors">
-            Examples
-          </a>
-          <a href="#roi" className="text-sm font-medium text-stone-600 hover:text-brand-900 transition-colors">
-            ROI
+          <a href="#about" className="text-sm font-medium text-stone-600 hover:text-brand-900 transition-colors">
+            About
           </a>
         </nav>
 
@@ -66,8 +66,9 @@ const Header: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white border-b border-stone-200 p-6 md:hidden flex flex-col space-y-4 shadow-lg">
-           <a href="#how-it-works" className="text-lg font-serif text-stone-900" onClick={() => setIsMobileMenuOpen(false)}>Mechanism</a>
-           <a href="#examples" className="text-lg font-serif text-stone-900" onClick={() => setIsMobileMenuOpen(false)}>Examples</a>
+           <a href="#features" className="text-lg font-serif text-stone-900" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
+           <a href="#how-it-works" className="text-lg font-serif text-stone-900" onClick={() => setIsMobileMenuOpen(false)}>How it works</a>
+           <a href="#about" className="text-lg font-serif text-stone-900" onClick={() => setIsMobileMenuOpen(false)}>About</a>
            <Button variant="outline" className="w-full justify-center">See example hub</Button>
            <Button variant="primary" className="w-full justify-center">Book a demo</Button>
         </div>
