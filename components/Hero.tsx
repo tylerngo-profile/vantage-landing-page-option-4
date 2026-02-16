@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           <div className="lg:col-span-7 flex flex-col justify-center relative z-10">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.12] text-stone-900 mb-8 tracking-tight">
+            <h1 className="font-serif text-3xl md:text-5xl lg:text-5xl font-medium leading-[1.2] text-stone-900 mb-8 tracking-tight">
               The insight hub for&nbsp;your <br />
               <span className="italic text-brand-900">in-house experts.</span>
             </h1>
