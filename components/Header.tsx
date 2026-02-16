@@ -22,12 +22,14 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         
-        {/* Logo - Serif Typographic */}
-        <div className="flex items-center space-x-2">
-          <span className="font-serif text-2xl font-bold tracking-tight text-stone-900">
-            Vantage.
-          </span>
-        </div>
+        {/* Logo */}
+        <a href="#" className="flex items-center" aria-label="Vantage home">
+          <img
+            src="/images/Vantage-logo-dark.svg"
+            alt="Vantage"
+            className="h-7 w-auto"
+          />
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">

@@ -8,9 +8,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           
           <div className="lg:col-span-1">
-            <span className="font-serif text-2xl font-bold tracking-tight text-stone-900 block mb-6">
-                Vantage.
-            </span>
+            <a href="#" className="inline-flex items-center mb-6" aria-label="Vantage home">
+              <img
+                src="/images/Vantage-logo-dark.svg"
+                alt="Vantage"
+                className="h-7 w-auto"
+              />
+            </a>
             <p className="text-stone-500 text-sm leading-relaxed">
               The editorial engine for the world's leading professional services firms.
             </p>

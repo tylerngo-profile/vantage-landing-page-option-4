@@ -6,16 +6,13 @@
     <title>Vantage | The Authority Engine</title>
     <meta name="description" content="Turn your experts' knowledge into a high-performance content engine.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['"Inter"', 'sans-serif'],
+              serif: ['"Poppins"', 'sans-serif'],
+              sans: ['"Poppins"', 'sans-serif'],
             },
             colors: {
               brand: {
@@ -36,13 +33,42 @@
       }
     </script>
     <style>
+      @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Poppins';
+        src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
         background-color: #fafaf9; /* stone-50 */
       }
       h1, h2, h3, h4, h5, h6 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Poppins', sans-serif;
       }
     </style>
   <script type="importmap">
